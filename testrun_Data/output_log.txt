@@ -23,21 +23,21 @@ Platform assembly: C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Manag
 Loading C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.028 seconds
+- Completed reload, in  0.034 seconds
 Platform assembly: C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.580246 ms
+UnloadTime: 1.349925 ms
 trying to connect to server
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3714 -> priority: 1 
-  Thread -> id: 2610 -> priority: 1 
+  Thread -> id: 3448 -> priority: 1 
+  Thread -> id: 6fc -> priority: 1 
 connected to server
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -51,14 +51,14 @@ joined room: MidnightWar1
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.652246 ms
+UnloadTime: 0.682271 ms
 InitDelay starting
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 424.
-Total: 0.248888 ms (FindLiveObjects: 0.020938 ms CreateObjectMapping: 0.030814 ms MarkObjects: 0.189629 ms  DeleteObjects: 0.007111 ms)
+Total: 0.475259 ms (FindLiveObjects: 0.078617 ms CreateObjectMapping: 0.056493 ms MarkObjects: 0.332641 ms  DeleteObjects: 0.006716 ms)
 
 InitDelay continuing
  
@@ -68,11 +68,27 @@ starting game
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+Failed to Instantiate prefab: Empty. Verify the Prefab is in a Resources folder (and not in a subfolder)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
 received new world seed. It's: 5
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 It works. Seed is: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+stuff
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+got into InitPlayers
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Instantiating P1
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

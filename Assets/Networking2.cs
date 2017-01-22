@@ -15,6 +15,7 @@ public class Networking2 : Photon.MonoBehaviour {
     public int worldSeed;
     public bool seedCheck = false;
     public int onlyOnce = 0;
+    public GameObject playerPrefab;
 
     public void Awake()
     {
@@ -41,14 +42,25 @@ public class Networking2 : Photon.MonoBehaviour {
     {
         if(seedCheck && onlyOnce == 0)
         {
+            print("stuff");
             InitPlayers();
+            onlyOnce = 1;
         }
     }
 
     public void InitPlayers()
     {
-        if (playerNum == 1) PhotonNetwork.Instantiate("Player", startingPos1, Quaternion.identity, 1);
-        if (playerNum == 2) PhotonNetwork.Instantiate("Player", startingPos2, Quaternion.identity, 2);
+        Debug.Log("got into InitPlayers");
+        if (playerNum == 1)
+        {
+            print("Instantiating P1");
+            PhotonNetwork.Instantiate("Player", startingPos1, Quaternion.identity, 0);
+        }
+        if (playerNum == 2)
+        {
+            print("Instantiating P2");
+            PhotonNetwork.Instantiate("Player", startingPos2, Quaternion.identity, 0);
+        }
     }
 
     IEnumerator InitDelay()
