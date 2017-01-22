@@ -12,6 +12,7 @@ public class Networking : MonoBehaviour
     int roomNum = 1;
     string roomName = "MidnightWar";
     RoomOptions roomOptions;
+    private bool conn = false;
 
     private void OnGUI()
     {
@@ -33,13 +34,18 @@ public class Networking : MonoBehaviour
     private void OnConnectedToMaster()
     {
         print("connected to server");
-        Connect();
+        conn = true;
+        //Connect(); This is the auto-join for when there isn't an interface to use.
     }
 
     public void Connect()
     {
-        print("connecting to room");
-        PhotonNetwork.JoinOrCreateRoom(roomName + roomNum, roomOptions, TypedLobby.Default);
+        if (conn == true)
+        {
+            conn = false;
+            print("connecting to room");
+            PhotonNetwork.JoinOrCreateRoom(roomName + roomNum, roomOptions, TypedLobby.Default);
+        }
     }
 
     public void OnJoinedRoom()
