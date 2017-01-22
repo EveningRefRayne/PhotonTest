@@ -13,7 +13,8 @@ public class Networking2 : Photon.MonoBehaviour {
     public PhotonView myView;
     public int playerNum;
     public int worldSeed;
-    private bool seedCheck = false;
+    public bool seedCheck = false;
+    public int onlyOnce = 0;
 
     public void Awake()
     {
@@ -38,7 +39,7 @@ public class Networking2 : Photon.MonoBehaviour {
 
     public void Update()
     {
-        if(seedCheck)
+        if(seedCheck && onlyOnce == 0)
         {
             InitPlayers();
         }
@@ -71,6 +72,7 @@ public class Networking2 : Photon.MonoBehaviour {
         {
             worldSeed = seed;
             myView.RPC("ReceiveWorldSeed", PhotonTargets.Others, worldSeed);
+            seedCheck = true;
         }
         if (seedCheck)
         {
