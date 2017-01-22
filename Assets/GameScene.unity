@@ -352,11 +352,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b495c3695836ed34781b1ca186a72235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingPos1: {x: -1, y: -1, z: -1}
+  startingPos1: {x: -1, y: 1, z: -1}
   startingPos2: {x: 1, y: 1, z: 1}
   myView: {fileID: 0}
   playerNum: 0
   worldSeed: 0
+  seedCheck: 0
+  onlyOnce: 0
+  playerPrefab: {fileID: 0}
 --- !u!4 &1264053554
 Transform:
   m_ObjectHideFlags: 0
