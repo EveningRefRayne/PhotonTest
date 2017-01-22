@@ -4,12 +4,10 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// This script automatically connects to Photon (using the settings file),
-/// tries to join a random room and creates one if none was found (which is ok).
+/// This script lets the player connect to the game.
 /// </summary>
 public class Networking : MonoBehaviour
 {
-    /// <summary>Connect automatically? If false you can set this to true later on or call ConnectUsingSettings in your own scripts.</summary>
     public bool AutoConnect = true;
     int roomNum = 1;
     string roomName = "MidnightWar";
@@ -18,15 +16,15 @@ public class Networking : MonoBehaviour
 
     public void Start()
     {
-        PhotonNetwork.autoJoinLobby = false;    // we join randomly. always. no need to join a lobby to get the list of rooms.
+        PhotonNetwork.autoJoinLobby = false;
         PhotonNetwork.ConnectUsingSettings("v4.2");
         roomOptions = new RoomOptions() { IsVisible = false, MaxPlayers = 2 };
     }
 
-    /*public void Connect()
+    public void Connect()
     {
         PhotonNetwork.JoinOrCreateRoom(roomName + roomNum, roomOptions, TypedLobby.Default);
-    }*/
+    }
 
     public void OnJoinedRoom()
     {
