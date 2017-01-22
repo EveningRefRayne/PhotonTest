@@ -23,22 +23,76 @@ Platform assembly: C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Manag
 Loading C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
 Platform assembly: C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.030 seconds
+- Completed reload, in  0.035 seconds
 Platform assembly: C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Scott\Documents\GitHub\PhotonTest\testrun_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.654122 ms
+UnloadTime: 1.361777 ms
 trying to connect to server
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 36e4 -> priority: 1 
-  Thread -> id: d10 -> priority: 1 
+  Thread -> id: dd4 -> priority: 1 
+  Thread -> id: 1280 -> priority: 1 
 connected to server
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+connecting to room
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+joined room: MidnightWar1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+new player joined room
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.506368 ms
+InitDelay starting
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 364.
+Total: 0.283259 ms (FindLiveObjects: 0.026074 ms CreateObjectMapping: 0.023703 ms MarkObjects: 0.220839 ms  DeleteObjects: 0.012246 ms)
+
+The observed monobehaviour (NetworkControl) of this PhotonView does not implement OnPhotonSerializeView()!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+InitDelay continuing
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+starting game
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+received new world seed. It's: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+It works. Seed is: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+stuff
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+got into InitPlayers
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Instantiating P2
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
