@@ -35,7 +35,7 @@ public class Networking : MonoBehaviour
     {
         print("connected to server");
         conn = true;
-        //Connect(); This is the auto-join for when there isn't an interface to use.
+        Connect(); //This is the auto-join for when there isn't an interface to use.
     }
 
     public void Connect()
