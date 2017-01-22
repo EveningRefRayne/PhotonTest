@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 /// This script automatically connects to Photon (using the settings file),
 /// tries to join a random room and creates one if none was found (which is ok).
 /// </summary>
-public class Networking : Photon.MonoBehaviour
+public class Networking : MonoBehaviour
 {
     /// <summary>Connect automatically? If false you can set this to true later on or call ConnectUsingSettings in your own scripts.</summary>
     public bool AutoConnect = true;
@@ -69,8 +69,7 @@ public class Networking : Photon.MonoBehaviour
 
     private void checkPlayers()
     {
-        Room currRoom;
-        if (Room.playerCount() == 2)
+        if (PhotonNetwork.room.PlayerCount == 2)
         {
             //Go to the new scene to play the game
         }
@@ -84,6 +83,6 @@ public class Networking : Photon.MonoBehaviour
     IEnumerator reloadScene()
     {
         yield return new WaitForSeconds(3);
-        Scenemanager.setActiveScene(Scenemanager.GetActiveScene().buildIndex());
+        SceneManager.SetActiveScene(SceneManager.GetActiveScene());
     }
 }
