@@ -13,31 +13,50 @@ public class Networking : MonoBehaviour
     string roomName = "MidnightWar";
     RoomOptions roomOptions;
 
-
+    private void OnGUI()
+    {
+        GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
+    }
     public void Start()
     {
         PhotonNetwork.autoJoinLobby = false;
         PhotonNetwork.ConnectUsingSettings("v4.2");
         roomOptions = new RoomOptions() { IsVisible = false, MaxPlayers = 2 };
+        print("trying to connect to server");
+    }
+
+    private void OnFailedToConnectToMasterServer(NetworkConnectionError error)
+    {
+        print("Failed to connect to master server. Error:" + error);
+    }
+
+    private void OnConnectedToMaster()
+    {
+        print("connected to server");
+        Connect();
     }
 
     public void Connect()
     {
+        print("connecting to room");
         PhotonNetwork.JoinOrCreateRoom(roomName + roomNum, roomOptions, TypedLobby.Default);
     }
 
     public void OnJoinedRoom()
     {
+        print("joined room: " + PhotonNetwork.room.Name);
         checkPlayers();
     }
 
     public void OnPhotonPlayerConnected()
     {
+        print("new player joined room");
         checkPlayers();
     }
 
     public void OnJoinRoomFailed()
     {
+        print("room join failed, trying next room");
         roomNum++;
         PhotonNetwork.JoinOrCreateRoom(roomName + roomNum, roomOptions, TypedLobby.Default);
     }
@@ -70,7 +89,7 @@ public class Networking : MonoBehaviour
     {
         if (PhotonNetwork.room.PlayerCount == 2)
         {
-            //Go to the new scene to play the game
+            SceneManager.LoadScene("GameScene");
         }
     }
 
@@ -82,6 +101,6 @@ public class Networking : MonoBehaviour
     IEnumerator reloadScene()
     {
         yield return new WaitForSeconds(3);
-        SceneManager.SetActiveScene(SceneManager.GetActiveScene());
+        SceneManager.LoadScene("TitleScreen");
     }
 }
