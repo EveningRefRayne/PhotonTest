@@ -13,19 +13,20 @@ public class Networking : MonoBehaviour
     public bool AutoConnect = true;
     int roomNum = 1;
     string roomName = "MidnightWar";
-    RoomOptions roomOptions = new RoomOptions() { IsVisible = false, MaxPlayers = 2 };
+    RoomOptions roomOptions;
 
 
     public void Start()
     {
         PhotonNetwork.autoJoinLobby = false;    // we join randomly. always. no need to join a lobby to get the list of rooms.
         PhotonNetwork.ConnectUsingSettings("v4.2");
+        roomOptions = new RoomOptions() { IsVisible = false, MaxPlayers = 2 };
     }
 
-    public void Connect()
+    /*public void Connect()
     {
         PhotonNetwork.JoinOrCreateRoom(roomName + roomNum, roomOptions, TypedLobby.Default);
-    }
+    }*/
 
     public void OnJoinedRoom()
     {
